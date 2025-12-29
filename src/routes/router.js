@@ -1,0 +1,7 @@
+const express = require("express");
+const userLoggingsRouter = require("./user-loggings-router");
+const router = express.Router();
+
+router.use("/", userLoggingsRouter);
+
+module.exports = router;
