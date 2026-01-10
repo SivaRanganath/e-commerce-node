@@ -29,13 +29,13 @@ const userSchema = new mongoose.Schema({
         values: Object.values(userStatusEnum),
         message: "{VALUE} is not a valid user status"
     },
-    phoneNumber: {
-        type: String,
-        trim: true,
-        validate: function (phoneNumber) {
-            return customValidator.isMobilePhone(phoneNumber);
-        }
-    },
+    // phoneNumber: {
+    //     type: String,
+    //     trim: true,
+    //     validate: function (phoneNumber) {
+    //         return customValidator.isMobilePhone(phoneNumber);
+    //     }
+    // },
     isAdmin: {
         type: mongoose.Schema.Types.Boolean,
         default: false

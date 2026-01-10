@@ -1,5 +1,5 @@
 const express = require("express");
-const userLoggingsRouter = require("./user-loggings-router");
+const userLoggingsRouter = require("./user-loggings-router.js");
 const router = express.Router();
 
 router.use("/", userLoggingsRouter);
